@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <report
+        id="partner_open_invoices"
+        model="res.partner"
+        string="Open invoices"
+        report_type="qweb-pdf"
+        name="partner_report_open_invoices.report_partner_open_invoices"
+        file="partner_report_open_invoices.report_partner_open_invoices"
+    />
+
+    <template id="report_partner_open_invoices">
+        <t t-name="report_partner_open_invoices">
+            <t t-call="report.html_container">
+                <t t-foreach="docs" t-as="partner">
+                    <t t-set="partner" t-value="partner.with_context({'lang':partner.lang})"/>
+
+                    <h1>Open invoices for <span t-field="partner.name" /></h1>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>
