@@ -2,9 +2,9 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-======================================
-Partner Address Partner require street
-======================================
+====================================
+Partner Address Partner require name
+====================================
 
 Set name-field to be required on partner address tree view.
 
