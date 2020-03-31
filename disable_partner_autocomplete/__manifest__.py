@@ -30,6 +30,6 @@
     "installable": True,
     "external_dependencies": {"python": [], "bin": []},
     "depends": ["base", "partner_autocomplete"],
-    "data": ["views/res_partner.xml", "views/company.xml"],
+    "data": ["views/assets.xml", "views/res_config_settings.xml"],
     "demo": [],
 }

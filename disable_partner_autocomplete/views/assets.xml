@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="assets_backend" name="Partner Autocomplete Assets" inherit_id="web.assets_backend">
+    <template id="disable_partner_autocomplete_assets_backend" name="Disable Partner Autocomplete Assets" inherit_id="web.assets_backend">
+        <xpath
+            expr="script[@src='/partner_autocomplete/static/src/js/partner_autocomplete_core.js']"
+            position="replace">
+        </xpath>
+        <xpath
+            expr="script[@src='/partner_autocomplete/static/src/js/partner_autocomplete_fieldchar.js']"
+            position="replace">
+        </xpath>
+        <xpath
+            expr="script[@src='/partner_autocomplete/static/src/js/partner_autocomplete_many2one.js']"
+            position="replace">
+        </xpath>
+
         <xpath expr="." position="inside">
-            <link rel="stylesheet" type="text/scss" href="/partner_autocomplete/static/src/scss/partner_autocomplete.scss"/>
-            <script type="text/javascript" src="/partner_autocomplete/static/src/js/partner_autocomplete_core.js" />
-            <script type="text/javascript" src="/partner_autocomplete/static/src/js/partner_autocomplete_fieldchar.js" />
-            <script type="text/javascript" src="/partner_autocomplete/static/src/js/partner_autocomplete_many2one.js" />
+            <!--<link rel="stylesheet" type="text/scss" href="/partner_autocomplete/static/src/scss/partner_autocomplete.scss"/>-->
+            <!--<script type="text/javascript" src="/partner_autocomplete/static/src/js/partner_autocomplete_core.js" />-->
+            <!--<script type="text/javascript" src="/partner_autocomplete/static/src/js/partner_autocomplete_fieldchar.js" />-->
+            <!--<script type="text/javascript" src="/partner_autocomplete/static/src/js/partner_autocomplete_many2one.js" />-->
         </xpath>
     </template>
 
