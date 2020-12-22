@@ -1,3 +1,5 @@
+# ! MIGRATED TO https://gitlab.com/tawasta/odoo/partner !
+
 [![Build Status](https://travis-ci.org/Tawasta/partner.svg?branch=12.0)](https://travis-ci.org/Tawasta/partner)
 
 Partner and contact management
